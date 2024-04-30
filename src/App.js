@@ -10,10 +10,7 @@ const App = () => {
       
       <div className='container'>
         <Sidebar />
-
-        <div className='others'>
-          <Home />
-        </div>
+        <Home />
       </div>
     </div>
   );
