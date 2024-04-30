@@ -1,6 +1,7 @@
 import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import './app.css';
+import Home from "./pages/home/Home";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
         <Sidebar />
 
         <div className='others'>
-          Other Pages
+          <Home />
         </div>
       </div>
     </div>
