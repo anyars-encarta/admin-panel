@@ -1,44 +1,19 @@
+import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
+import './app.css';
 
 const App = () => {
   return (
     <div>
       <Topbar />
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
-      Test <br/>
+      
+      <div className='container'>
+        <Sidebar />
+
+        <div className='others'>
+          Other Pages
+        </div>
+      </div>
     </div>
   );
 }
