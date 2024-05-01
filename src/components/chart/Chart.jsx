@@ -1,21 +1,20 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { data } from '../../constants/chat';
+import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 import './chart.css';
 
-const Chart = () => {
+const Chart = ({title, data, xDataKey, dataKey, grid}) => {
     return (
         <div className='chart-container'>
-            <h3 className='chartTitle'>User Analytics</h3>
+            <h3 className='chartTitle'>{title}</h3>
 
             <ResponsiveContainer width='100%' aspect={4 / 1}>
                 <LineChart data={data}>
-                    <XAxis dataKey='name' stroke='#5550bd' />
+                    <XAxis dataKey={xDataKey} stroke='#5550bd' />
                     {/* <YAxis dataKey='name' /> */}
-                    <Line type='monotone' dataKey='Active User' stroke='#5550bd' />
+                    <Line type='monotone' dataKey={dataKey} stroke='#5550bd' />
                     <Tooltip />
-                    <CartesianGrid stroke='#e0dfdf' strokeDasharray='5 5' />
+                    {grid && <CartesianGrid stroke='#e0dfdf' strokeDasharray='5 5' />}
                 </LineChart>
             </ResponsiveContainer>
         </div>
