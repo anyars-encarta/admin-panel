@@ -14,7 +14,7 @@ import {
     WorkOutline,
     Report,
 } from '@mui/icons-material';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -24,10 +24,10 @@ const Sidebar = () => {
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <NavLink to="/" className='link'>
+                            <Link to="/" className='link'>
                                 <LineStyle className='sidebarIcon' />
                                 Home
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className="sidebarListItem">
                             <Timeline className='sidebarIcon' />
@@ -44,14 +44,16 @@ const Sidebar = () => {
                     <h3 className="sidebarTitle">Quich Menu</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem">
-                            <NavLink to="/users" className='link'>
+                            <Link to="/users" className='link'>
                                 <PermIdentity className='sidebarIcon' />
                                 Users
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className="sidebarListItem">
-                            <Storefront className='sidebarIcon' />
-                            Products
+                            <Link to="/products" className='link'>
+                                <Storefront className='sidebarIcon' />
+                                Products
+                            </Link>
                         </li>
                         <li className="sidebarListItem">
                             <AttachMoney className='sidebarIcon' />
