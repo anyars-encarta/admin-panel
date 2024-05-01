@@ -10,6 +10,10 @@ const UserList = () => {
 
     const [data, setData] = useState(rows);
 
+    const handleDelete = (id) => {
+       setData(data.filter((item) => item.id !== id))
+    };
+
 const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
     {
@@ -33,7 +37,7 @@ const columns = [
                         <button className="userListEdit">Edit</button>
                     </Link>
 
-                    <DeleteOutline className="userListDelete" />
+                    <DeleteOutline className="userListDelete" onClick={() => handleDelete(params.row.id)} />
                 </>
             )
         }
