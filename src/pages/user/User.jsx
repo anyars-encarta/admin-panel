@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalendarToday, LocationSearching, MailOutline, PermIdentity, PhoneAndroid } from '@mui/icons-material';
+import { CalendarToday, LocationSearching, MailOutline, PermIdentity, PhoneAndroid, Publish } from '@mui/icons-material';
 
 import './user.css';
 
@@ -27,7 +27,7 @@ const SingleUser = () => {
 
             <div className="userShowInfo">
               <PermIdentity className='userShowIcon' />
-              <span className="userShowInfoTitle">encarta</span>
+              <span className="userShowInfoTitle">johndoe</span>
             </div>
 
             <div className="userShowInfo">
@@ -43,7 +43,7 @@ const SingleUser = () => {
 
             <div className="userShowInfo">
               <MailOutline className='userShowIcon' />
-              <span className="userShowInfoTitle">anyarsencarta@gmail.com</span>
+              <span className="userShowInfoTitle">johndoe@gmail.com</span>
             </div>
 
             <div className="userShowInfo">
@@ -53,7 +53,68 @@ const SingleUser = () => {
           </div>
         </div>
 
-        <div className="userUpdate"></div>
+        <div className="userUpdate">
+          <span className="userUpdateTitle">Edit</span>
+
+          <form className="userUpdateForm">
+            <div className="userUpdateLeft">
+              <div className="userUpdateItem">
+                <label htmlFor="username">Username</label>
+                <input
+                  id='username'
+                  type="text"
+                  placeholder='encarta'
+                  className='userUpdateInput' />
+              </div>
+
+              <div className="userUpdateItem">
+                <label htmlFor="fullname">Full Name</label>
+                <input
+                  id='fullname'
+                  type="text"
+                  placeholder='John Doe'
+                  className='userUpdateInput' />
+              </div>
+
+              <div className="userUpdateItem">
+                <label htmlFor="email">Email</label>
+                <input
+                  id='email'
+                  type="email"
+                  placeholder='johndoe@gmail.com'
+                  className='userUpdateInput' />
+              </div>
+
+              <div className="userUpdateItem">
+                <label htmlFor="phone">Phone</label>
+                <input
+                  id='phone'
+                  type="text"
+                  placeholder='+233 24 211 9972'
+                  className='userUpdateInput' />
+              </div>
+
+              <div className="userUpdateItem">
+                <label htmlFor="address">Address</label>
+                <input
+                  id='address'
+                  type="text"
+                  placeholder='Kumasi | Ghana'
+                  className='userUpdateInput' />
+              </div>
+            </div>
+
+            <div className="userUpdateRight">
+              <div className="userUpdateUpload">
+                <img className='userUpdateImg' src="/images/profile.jpg" alt="" />
+                <label htmlFor="file"><Publish className='userUpdateIcon' /></label>
+                <input id='file' type="file" style={{ display: 'none' }}/>
+              </div>
+
+              <button className="userUpdateButton">Update</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   )
