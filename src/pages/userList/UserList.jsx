@@ -1,6 +1,6 @@
 import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import { rows, columns } from '../../constants/table';
+import { rows, columns } from '../../constants/userTable';
 
 import './userList.css';
 
