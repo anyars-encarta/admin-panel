@@ -2,7 +2,7 @@ import React from 'react';
 import './home.css';
 import FeaturedInfo from '../../components/featuredInfo/FeaturedInfo';
 import Chart from '../../components/chart/Chart';
-import { userData } from '../../constants/chat';
+import { userData } from '../../constants/user';
 import WidgetSmall from '../../components/widgetSmall/WidgetSmall';
 import WidgetBig from '../../components/widgetBig/WidgetBig';
 
