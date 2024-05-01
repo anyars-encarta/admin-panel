@@ -2,13 +2,17 @@ import React from 'react';
 import { CalendarToday, LocationSearching, MailOutline, PermIdentity, PhoneAndroid, Publish } from '@mui/icons-material';
 
 import './user.css';
+import { Link } from 'react-router-dom';
 
 const SingleUser = () => {
   return (
     <div className='user'>
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
-        <button className="userAddButton">Create</button>
+        <Link to="/newUser/" className='link'>
+          <button className="userAddButton">Create</button>
+        </Link>
+
       </div>
 
       <div className="userContainer">
@@ -108,7 +112,7 @@ const SingleUser = () => {
               <div className="userUpdateUpload">
                 <img className='userUpdateImg' src="/images/profile.jpg" alt="" />
                 <label htmlFor="file"><Publish className='userUpdateIcon' /></label>
-                <input id='file' type="file" style={{ display: 'none' }}/>
+                <input id='file' type="file" style={{ display: 'none' }} />
               </div>
 
               <button className="userUpdateButton">Update</button>
