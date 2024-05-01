@@ -50,7 +50,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li className="sidebarListItem">
-                            <Link to="/products" className='link'>
+                            <Link to="/products-list" className='link'>
                                 <Storefront className='sidebarIcon' />
                                 Products
                             </Link>
