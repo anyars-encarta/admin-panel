@@ -1,19 +1,20 @@
 import React from 'react';
 import './sidebar.css';
-import { 
-    LineStyle, 
-    Timeline, 
-    TrendingUp, 
-    PermIdentity, 
+import {
+    LineStyle,
+    Timeline,
+    TrendingUp,
+    PermIdentity,
     Storefront,
     AttachMoney,
     BarChart,
     MailOutline,
-    DynamicFeed, 
+    DynamicFeed,
     ChatBubbleOutline,
     WorkOutline,
     Report,
- } from '@mui/icons-material';
+} from '@mui/icons-material';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -23,8 +24,10 @@ const Sidebar = () => {
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <LineStyle className='sidebarIcon' />
-                            Home
+                            <NavLink to="/" className='link'>
+                                <LineStyle className='sidebarIcon' />
+                                Home
+                            </NavLink>
                         </li>
                         <li className="sidebarListItem">
                             <Timeline className='sidebarIcon' />
@@ -41,8 +44,10 @@ const Sidebar = () => {
                     <h3 className="sidebarTitle">Quich Menu</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem">
-                            <PermIdentity className='sidebarIcon' />
-                            Users
+                            <NavLink to="/users" className='link'>
+                                <PermIdentity className='sidebarIcon' />
+                                Users
+                            </NavLink>
                         </li>
                         <li className="sidebarListItem">
                             <Storefront className='sidebarIcon' />
