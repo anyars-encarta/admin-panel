@@ -21,6 +21,7 @@
 
     .productTop {
         display: flex;
+        flex-wrap: wrap;
 
         .productTopLeft,
         .productTopRight {
@@ -77,6 +78,7 @@
         .productForm {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             .productFormLeft {
                 display: flex;
