@@ -33,7 +33,7 @@ const columns = [
         field: 'action', headerName: 'Action', width: 150, renderCell: (params) => {
             return (
                 <>
-                    <Link to={"/user/" + params.row.id} className='link'>
+                    <Link to={"/users/" + params.row.id} className='link'>
                         <button className="userListEdit">Edit</button>
                     </Link>
 
