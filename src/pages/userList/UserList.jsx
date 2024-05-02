@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import { rows } from '../../constants/userTable';
+import { userRows } from '../../constants/userTable';
 import { DeleteOutline } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ import './userList.css';
 
 const UserList = () => {
 
-    const [data, setData] = useState(rows);
+    const [data, setData] = useState(userRows);
 
     const handleDelete = (id) => {
        setData(data.filter((item) => item.id !== id))
