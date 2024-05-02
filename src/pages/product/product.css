@@ -30,12 +30,8 @@
         .productTopRight {
             padding: 20px;
             margin: 20px;
-
             -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
             box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-
-            display: flex;
-            flex-direction: column;
 
             .productInfoTop {
                 display: flex;
@@ -44,7 +40,7 @@
                 .productInfoImage {
                     width: 40px;
                     height: 40px;
-                    border-radius: 50%;   
+                    border-radius: 50%;
                     object-fit: cover;
                     margin-right: 20px;
                 }
@@ -67,6 +63,68 @@
                     .productInfoValue {
                         font-weight: 300;
                     }
+                }
+            }
+        }
+    }
+
+    .productBottom {
+        padding: 20px;
+        margin: 20px;
+        -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+        .productForm {
+            display: flex;
+            justify-content: space-between;
+
+            .productFormLeft {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-bottom: 10px;
+                    color: gray;
+                }
+
+                input {
+                    margin-bottom: 10px;
+                    border: none;
+                    padding: 5px;
+                    border-bottom: 1px solid gray;
+                }
+
+                select {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .productFormRight {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .productUpload {
+                    display: flex;
+                    align-items: center;
+
+                    .productUploadImage {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 10px;
+                        object-fit: cover;
+                        margin-right: 20px;
+                    }
+                }
+
+                .productButton {
+                    border: none;
+                    padding: 5px;
+                    border-radius: 5px;
+                    background-color: darkblue;
+                    color: white;
+                    font-weight: 600;
+                    cursor: pointer;
                 }
             }
         }
