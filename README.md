@@ -45,7 +45,7 @@
 1. React
 2. Material UI
 3. Recharts
-4. CSS 3
+4. SASS
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -55,7 +55,7 @@
     <li><a href="https://reactjs.org/">React</a></li>
     <li><a href="https://mui.com/material-ui/">Material UI</a></li>
     <li><a href="https://recharts.org/">Recharts</a></li>
-    <li><a href="https://www.w3.org/Style/CSS/">CSS 3</a></li>
+    <li><a href="https://sass-lang.com/">SASS</a></li>
   </ul>
 </details>
 
