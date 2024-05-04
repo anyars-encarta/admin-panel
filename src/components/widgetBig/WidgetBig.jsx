@@ -1,5 +1,5 @@
 import React from 'react';
-import './widgetBig.css';
+import './widgetBig.scss';
 
 const WidgetBig = () => {
   const Button = ({type}) => {

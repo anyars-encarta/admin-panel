@@ -1,7 +1,7 @@
 import React from 'react';
 import { CalendarToday, LocationSearching, MailOutline, PermIdentity, PhoneAndroid, Publish } from '@mui/icons-material';
 
-import './user.css';
+import './user.scss';
 import { Link } from 'react-router-dom';
 
 const SingleUser = () => {

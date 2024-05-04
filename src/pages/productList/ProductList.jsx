@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './productList.css';
+import './productList.scss';
 import { DataGrid } from '@mui/x-data-grid';
 import { productRows } from '../../constants/userTable';
 import { DeleteOutline } from '@mui/icons-material';

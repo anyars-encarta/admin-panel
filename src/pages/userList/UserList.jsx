@@ -4,7 +4,7 @@ import { userRows } from '../../constants/userTable';
 import { DeleteOutline } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
-import './userList.css';
+import './userList.scss';
 
 const UserList = () => {
 

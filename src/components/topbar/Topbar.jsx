@@ -1,5 +1,5 @@
 import React from 'react';
-import './topbar.css';
+import './topbar.scss';
 import { NotificationsNone, Language, Settings } from '@mui/icons-material';
 
 const Topbar = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowDownward, ArrowUpward } from '@mui/icons-material';
-import './featuredInfo.css';
+import './featuredInfo.scss';
 
 const FeaturedInfo = () => {
     const [rate, setRate] = useState(-5);
