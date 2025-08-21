@@ -39,7 +39,7 @@
 <!-- INTRO -->
 # 📖 Admin Dashboard<a name="about-project"></a>
 
-> Admin Dashboard is a responsive design of an admin panel that shows the various menus of an app on a side menu. It also has a top nav menu that also displays some menu items. The dashboard includes display of analytics using graphs.
+> Admin Dashboard is a responsive design of an admin panel that shows the various menus of an app on a side menu. It also has a top nav menu that also displays some menu items. The dashboard includes display of analytics using graphs. It was built with React
 
 ## 🛠 Built With <a name="built-with"></a>
 1. React
